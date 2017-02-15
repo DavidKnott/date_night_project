@@ -1,7 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
-require './date_night.rb'
+require './lib/date_night.rb'
 
 #1 to 1 tests for methods
 class DateNightTest < Minitest::Test
@@ -117,7 +117,7 @@ class DateNightTest < Minitest::Test
 
     def test_load_for_multiple_values
     tree = BinaryTree.new
-    assert_equal 99, tree.load("movies.txt")
+    assert_equal 99, tree.load("./lib/movies.txt")
     end
 
     def test_health_for_root_node

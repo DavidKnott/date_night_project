@@ -186,7 +186,7 @@ class BinaryTree
 end
 
 tree = BinaryTree.new
-tree.load('movies.txt')
+tree.load('./lib/movies.txt')
 
 p tree.top_five_movies
 
